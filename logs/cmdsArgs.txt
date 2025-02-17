@@ -1,0 +1,6 @@
+python -m debugpy --listen 5678 --wait-for-client ./apps/eval.py --name pifu_demo --batch_size 1 --mlp_dim 257 1024 512 256 128 1 --mlp_dim_color 513 1024 512 256 128 3 --num_stack 4 --num_hourglass 2 --resolution 256 --hg_down ave_pool --norm group --norm_color group --test_folder_path ./sample_images --load_netG_checkpoint_path ./checkpoints/net_G --load_netC_checkpoint_path ./checkpoints/net_C
+
+python -m pdb ./apps/eval.py --name pifu_demo --batch_size 1 --mlp_dim '257 1024 512 256 128 1' --mlp_dim_color '513 1024 512 256 128 3' --num_stack 4 --num_hourglass 2 --resolution 256 --hg_down 'ave_pool' --norm 'group' --norm_color 'group' --test_folder_path './sample_images' --load_netG_checkpoint_path './checkpoints/net_G' --load_netC_checkpoint_path './checkpoints/net_C'
+
+
+--name pifu_demo --batch_size 1 --mlp_dim 257 1024 512 256 128 1 --mlp_dim_color 513 1024 512 256 128 3 --num_stack 4 --num_hourglass 2 --resolution 256 --hg_down ave_pool --norm group --norm_color group --test_folder_path ./PIFu/sample_images --load_netG_checkpoint_path ./PIFu/checkpoints/net_G --load_netC_checkpoint_path ./PIFu/checkpoints/net_C

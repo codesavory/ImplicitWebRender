@@ -1,0 +1,5 @@
+Challenges and resolutions
+
+1. Pifu is outdated and I had to modify the requirement.txt so that the versions are not hard requirements
+2. seems like due to sub-dependencies, some wheels needed to compiles from scratch so I had to install from x64 Native tools so that cl.exe could be used
+3. Seems like python3.12 and local python venv was really hard, I had to use Python 3.10 or 3.11 so I moved to conda and tried installing the requirements using that!
